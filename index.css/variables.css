@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Merriweather:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Merriweather:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
 
 :root {
 
     /* colors */
 
-    --color-blue: #005FA3;
     --color-black: #000000;
     --color-black-2: #222222;
+    --color-black-3: #333333;
+    --light-grey: #BDBDBD;
     --background-header-color: #F9F9F9;
+    --color-white: #FFFFFF;
+    --color-white-2: #EBEBEB;
+    --color-blue: #005FA3;
 
     /* typography */
+
 
 }
 
