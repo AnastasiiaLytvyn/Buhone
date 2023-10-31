@@ -122,7 +122,6 @@ header .feedback-and-nav nav ul .header-nav-link {
     max-width: 1116px;
 }
 
-
 .services ul {
     padding-top: 102px;
 }
@@ -146,7 +145,14 @@ header .feedback-and-nav nav ul .header-nav-link {
     background-color: var(--background-header-color);
     padding: 140px 0 140px;
     display: flex;
+    justify-content: center;
     gap: 124px;
+}
+
+.about-us .about-us-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1116px;
 }
 
 .about-us .about-us-title h3 p {
@@ -167,7 +173,6 @@ header .feedback-and-nav nav ul .header-nav-link {
     flex-wrap: wrap;
     gap: 30px;
     padding-top: 24px;
-
 }
 
 .about-us .about-us-list ul .cases-info {
@@ -202,7 +207,175 @@ header .feedback-and-nav nav ul .header-nav-link {
     font-weight: 700;
 }
 
+/* clients */
 
+.clients {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-white-2);
+    padding: 86px 0 92px;
+}
+
+.clients .clients-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1116px;
+}
+
+.clients .clients-title .general-info {
+    margin-bottom: 48px;
+}
+
+.clients .clients-title .title-info {
+    margin-bottom: 42px;
+}
+
+.clients .clients-title .groups-png {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.clients .clients-title .groups-png ul {
+    display: flex;
+    gap: 30px;
+}
+
+/* reviews-title */
+
+.reviews-title {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-header-color);
+    padding: 174px 0 120px;
+}
+
+.reviews-title-wrapper {
+    width: 100%;
+    max-width: 1116px;
+}
+
+.reviews-title .feedback .feedback-reviews {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.reviews-title .feedback .feedback-reviews button {
+    color: var(--color-white);
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 138%;
+    background-color: var(--color-blue);
+    padding: 19px 22px 19px 12px;
+    border: 0;
+    width: 270px;
+    height: 60px;
+}
+
+.reviews-title .slide-info {
+    padding: 45px 95px;
+    background-color: var(--color-white-2);
+}
+
+.reviews-title .slide-arrow button {
+    /*background-color: var(--color-blue);*/
+    padding: 22px;
+    border: 0;
+}
+
+/* propose */
+
+.propose {
+    display: flex;
+    justify-content: center;
+    padding: 102px 74px;
+    background-color: var(--color-white-2);
+}
+
+.propose .propose-title {
+    width: 100%;
+    max-width: 1116px;
+}
+
+.propose .title-info {
+    margin-bottom: 26px;
+}
+
+.propose ul {
+    display: flex;
+    gap: 26px;
+}
+
+.propose ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 90px 36px;
+    width: 168px;
+    height: 200px;
+}
+
+.propose ul li img {
+    width: 132px;
+    height: 126px;
+}
+
+.propose ul li p {
+    color: var(--color-black);
+    font-family: 'Lato';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 132%;
+}
+
+/* feed-info */
+
+.feed-info {
+    background-image: url(../img/background.last.jpg);
+    padding: 122px 0 140px;
+}
+
+.feed-info h4 {
+    color: var(--color-white);
+    font-family: 'Merriweather';
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 144%;
+    margin-bottom: 60px;
+}
+
+.feed-info p {
+    color: var(--color-white);
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 138%;
+    margin-bottom: 76px;
+} 
+
+.feed-info .feedback {
+    display: flex;
+    gap: 32px;
+}
+
+.feed-info .feedback li {
+    display: flex;
+    gap: 10px;
+}
+
+.feed-info .feedback li .info-text {
+    color: var(--color-white);
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 138%;
+    text-decoration: none;
+}
 
 
 

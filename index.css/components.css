@@ -1,8 +1,11 @@
 
+
+
 .general-info {
     font-family: 'Lato';
     font-size: 24px;
     font-weight: 900;
+    line-height: 138%;
     color: var(--light-grey);
     margin-bottom: 40px;
 }
@@ -11,5 +14,50 @@
     font-family: 'Merriweather';
     font-size: 48px;
     font-weight: 900;
+    line-height: 144%;
     color: var(--color-black-3);
+}
+
+.reviews-title .slide-info li .quotes {
+    color: var(--color-black);
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 138%;
+    margin-bottom: 58px;
+}
+
+.reviews-title .slide-info li .info-text-user {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.reviews-title .slide-info li .info-text-user img {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: var(--color-white-2);
+}
+
+.reviews-title .slide-info li .info-text-user .info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reviews-title .slide-info li .info-text-user .info-text .name {
+    color: var(--color-black);
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 138%;
+}
+
+.reviews-title .slide-info li .info-text-user .info-text p {
+    color: var(--color-black-4);
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 138%;
 }

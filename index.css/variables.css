@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Merriweather:wght@700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 
 :root {
@@ -9,9 +9,11 @@
     --color-black: #000000;
     --color-black-2: #222222;
     --color-black-3: #333333;
+    --color-black-4: #4F4F4F;
     --light-grey: #BDBDBD;
     --background-header-color: #F9F9F9;
     --color-white: #FFFFFF;
+    --color-white-2: #C4C4C4;
     --color-white-2: #EBEBEB;
     --color-blue: #005FA3;
 
