@@ -5,8 +5,6 @@
 /* header */
 
 header {
-    display: flex;
-    justify-content: center;
     background-color: var(--background-header-color);
     padding: 22px 16px 30px;
 }
@@ -14,8 +12,6 @@ header {
 header .page-header-content {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1116px;
 } 
 
 header .logo {
@@ -69,8 +65,6 @@ header .feedback-and-nav nav ul .header-nav-link {
 /* title-page */
 
 .title-page {
-    display: flex;
-    justify-content: center;
     background-image: url(../img/background.first.jpg);
     height: 670px;
 }
@@ -78,8 +72,6 @@ header .feedback-and-nav nav ul .header-nav-link {
 .title-page .title-page-cover {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 1116px;
     gap: 130px;
 }
 
@@ -92,17 +84,7 @@ header .feedback-and-nav nav ul .header-nav-link {
 }
 
 .title-page a {
-    font-family: 'Lato';
-    font-size: 25px;
-    font-weight: 400;
-    color: var(--color-white);
-    text-decoration: none;
-    background-color: var(--color-blue);
-    padding: 26px 22px;
     width: 288px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 168px;
 }
 
@@ -111,15 +93,11 @@ header .feedback-and-nav nav ul .header-nav-link {
 .services {
     background-color: var(--color-white-2);
     padding: 140px 0 140px;
-    display: flex;
-    justify-content: center;
 }
 
 .services .services-title {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 1116px;
 }
 
 .services ul {
@@ -131,11 +109,19 @@ header .feedback-and-nav nav ul .header-nav-link {
     gap: 30px;
 }
 
+.services ul .slide-img li {
+    background-image: url(../img/building.jpg);
+    aspect-ratio: 1 / 1;
+}
+
+.services ul .slide-img li a {
+    text-decoration: none;
+}
+
 .services ul .slide-img li p {
     font-family: 'Lato';
     font-size: 24px;
     font-weight: 900;
-    text-decoration: none;
     color: var(--color-white);
 }
 
@@ -144,15 +130,11 @@ header .feedback-and-nav nav ul .header-nav-link {
 .about-us {
     background-color: var(--background-header-color);
     padding: 140px 0 140px;
-    display: flex;
-    justify-content: center;
     gap: 124px;
 }
 
-.about-us .about-us-wrapper {
+.about-us-wrapper {
     display: flex;
-    width: 100%;
-    max-width: 1116px;
 }
 
 .about-us .about-us-title h3 p {
@@ -168,11 +150,10 @@ header .feedback-and-nav nav ul .header-nav-link {
 }
 
 .about-us .about-us-list ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
     padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .about-us .about-us-list ul .cases-info {
@@ -181,8 +162,9 @@ header .feedback-and-nav nav ul .header-nav-link {
     justify-content: space-between;
     background-color: var(--color-white-2);
     padding: 30px 40px;
-    width: 175px;
-    height: 195px;
+    box-sizing: border-box;
+    width: 255px;
+    height: 255px;
 }
 
 .about-us .about-us-list ul .cases-info .number {
@@ -210,8 +192,6 @@ header .feedback-and-nav nav ul .header-nav-link {
 /* clients */
 
 .clients {
-    display: flex;
-    justify-content: center;
     background-color: var(--color-white-2);
     padding: 86px 0 92px;
 }
@@ -219,8 +199,6 @@ header .feedback-and-nav nav ul .header-nav-link {
 .clients .clients-title {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 1116px;
 }
 
 .clients .clients-title .general-info {
@@ -245,15 +223,8 @@ header .feedback-and-nav nav ul .header-nav-link {
 /* reviews-title */
 
 .reviews-title {
-    display: flex;
-    justify-content: center;
     background-color: var(--background-header-color);
     padding: 174px 0 120px;
-}
-
-.reviews-title-wrapper {
-    width: 100%;
-    max-width: 1116px;
 }
 
 .reviews-title .feedback .feedback-reviews {
@@ -263,17 +234,9 @@ header .feedback-and-nav nav ul .header-nav-link {
 }
 
 .reviews-title .feedback .feedback-reviews button {
-    color: var(--color-white);
-    text-align: center;
-    font-family: 'Lato';
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 138%;
-    background-color: var(--color-blue);
-    padding: 19px 22px 19px 12px;
-    border: 0;
     width: 270px;
     height: 60px;
+    font-size: 18px;
 }
 
 .reviews-title .slide-info {
@@ -290,15 +253,8 @@ header .feedback-and-nav nav ul .header-nav-link {
 /* propose */
 
 .propose {
-    display: flex;
-    justify-content: center;
     padding: 102px 74px;
     background-color: var(--color-white-2);
-}
-
-.propose .propose-title {
-    width: 100%;
-    max-width: 1116px;
 }
 
 .propose .title-info {
@@ -333,11 +289,17 @@ header .feedback-and-nav nav ul .header-nav-link {
     line-height: 132%;
 }
 
-/* feed-info */
+/* footer */
+/* footer-info */
 
-.feed-info {
+.footer-info {
     background-image: url(../img/background.last.jpg);
     padding: 122px 0 140px;
+}
+
+.feed-info {
+    display: flex;
+    justify-content: space-between;
 }
 
 .feed-info h4 {
@@ -370,12 +332,144 @@ header .feedback-and-nav nav ul .header-nav-link {
 
 .feed-info .feedback li .info-text {
     color: var(--color-white);
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 20px;
     font-weight: 300;
     line-height: 138%;
     text-decoration: none;
 }
+
+.feedback-info form .form-contact-wrp {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feedback-info form .form-contact-wrp label .input-label {
+    display: block;
+    color: var(--color-white);
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 138%;
+    margin: 0 0 15px;
+}
+
+.feedback-info form .form-contact-wrp label input {
+    width: 255px;
+    padding: 4px 0 16px;
+    border: none;
+    border-bottom: 1px solid var(--color-white);
+    background-color: transparent;
+    color: var(--light-grey);
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 138%;
+}
+
+.feedback-info form label .input-label {
+    display: block;
+    margin: 34px 0 16px;
+    color: var(--color-white);
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.feedback-info form label textarea {
+    width: 540px;
+    border: none;
+    border-bottom: 1px solid var(--color-white);
+    background-color: transparent;
+    color: var(--light-grey);
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.feedback-info form button {
+    margin-left: auto;
+    margin-top: 50px;
+    padding: 18px;
+    font-size: 18px;
+    width: 270px;
+}
+
+/* footer-info-main */
+
+.footer-info-main {
+    background-color: var(--background-header-color);
+    padding: 50px 0;
+}
+
+.footer-info-main-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info-main .footer-info-main-wrapper p {
+    color: var(--color-black);
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 138%;
+}
+
+/* popap */
+
+.popap {
+    background-color: rgba(0, 0, 0, 0.70);;
+}
+
+.popap .popap-form {
+    background-color: var(--color-black-5);
+    margin: 112px 0 174px;
+    padding: 56px 0 70px;
+}
+
+.popap .popap-form p {
+    color: var(--color-white);
+    font-family: 'Merriweather';
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 144.555%;
+    margin-bottom: 64px;
+}
+
+.popap .popap-form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.popap .popap-form label .input-label {
+    margin: 18px 0 16px;
+    color: var(--color-white);
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.popap .popap-form label textarea {
+    width: 540px;
+    border: none;
+    border-bottom: 1px solid var(--color-white);
+    background-color: transparent;
+    color: var(--light-grey);
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.popap .popap-form button {
+    margin-top: 34px;
+    padding: 18px;
+    font-size: 18px;
+    width: 270px;
+}
+
 
 
 

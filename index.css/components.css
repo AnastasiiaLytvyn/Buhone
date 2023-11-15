@@ -1,6 +1,4 @@
 
-
-
 .general-info {
     font-family: 'Lato';
     font-size: 24px;
@@ -60,4 +58,36 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 138%;
+}
+
+/* container */ 
+
+.cotent-center {
+    display: flex;
+    justify-content: center;
+}
+
+.cotent-center > .cotent-center-wrapper {
+    width: 100%;
+    max-width: 1116px;
+}
+
+/* blua-button */
+
+.accent-btn {
+    font-family: 'Lato';
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--color-white);
+    text-decoration: none;
+    background-color: var(--color-blue);
+    padding: 26px 22px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accent-btn:disabled {
+    opacity: 0.2;
 }
