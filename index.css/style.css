@@ -213,6 +213,11 @@ header .feedback-and-nav nav ul .header-nav-link:active {
     height: 255px;
 }
 
+.about-us .about-us-list ul .cases-info:hover {
+    background-color: rgba(0, 95, 163, 1);
+}
+
+
 .about-us .about-us-list ul .cases-info .number {
     color: var(--color-black);
     font-family: 'Lato';
@@ -221,11 +226,16 @@ header .feedback-and-nav nav ul .header-nav-link:active {
     text-transform: uppercase;
 }
 
+
 .about-us .about-us-list ul .cases-info .finish-number {
     color: var(--color-black);
     font-family: 'Lato';
     font-size: 14px;
     font-weight: 700;
+}
+
+.about-us .about-us-list ul .cases-info:hover * {
+    color: var(--color-white);
 }
 
 .about-us .about-us-list ul .cases-info a {
@@ -262,8 +272,13 @@ header .feedback-and-nav nav ul .header-nav-link:active {
 }
 
 .clients .clients-title .groups-png ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
+}
+
+.clients .clients-title .groups-png ul li:hover {
+    opacity: 0.5;
 }
 
 /* reviews-title */
@@ -290,8 +305,43 @@ header .feedback-and-nav nav ul .header-nav-link:active {
     background-color: var(--color-white-2);
 }
 
-.reviews-title .slide-arrow button {
+.reviews-title .slide-arrow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.reviews-title .slide-arrow .slide-button {
+    display: flex;
+    align-self: flex-end;
+    gap: 30px;
+}
+
+.reviews-title .slide-arrow .slide-button li button {
+    border-radius: 50%;
+    padding: 0;
+    height: 10px;
+    width: 10px;
+    border: none;
+    background-color: var(--color-blue);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.reviews-title .slide-arrow .slide-button li button:hover {
+    opacity: 1;
+}
+
+.reviews-title .slide-arrow .arrow-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reviews-title .slide-arrow .arrow-group button {
     /*background-color: var(--color-blue);*/
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
     padding: 22px;
     border: 0;
 }
@@ -357,8 +407,8 @@ header .feedback-and-nav nav ul .header-nav-link:active {
     margin-bottom: 60px;
 }
 
-.feed-info p {
-    color: var(--color-white);
+.feed-info .feedback-info-and-form p {
+    color: var(--light-grey);
     font-family: 'Lato';
     font-size: 18px;
     font-weight: 300;
@@ -383,6 +433,7 @@ header .feedback-and-nav nav ul .header-nav-link:active {
     font-weight: 300;
     line-height: 138%;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .feedback-info form .form-contact-wrp {
@@ -428,6 +479,7 @@ header .feedback-and-nav nav ul .header-nav-link:active {
     border: none;
     border-bottom: 1px solid var(--color-white);
     background-color: transparent;
+    resize: none;
     color: var(--light-grey);
     font-family: 'Lato';
     font-size: 20px;
@@ -456,7 +508,7 @@ header .feedback-and-nav nav ul .header-nav-link:active {
 }
 
 .footer-info-main .footer-info-main-wrapper p {
-    color: var(--color-black);
+    color: var(--color-black-2);
     font-family: 'Lato';
     font-size: 14px;
     font-weight: 300;
@@ -475,12 +527,32 @@ header .feedback-and-nav nav ul .header-nav-link:active {
 }
 
 .popap .popap-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-black-5);
     box-sizing: border-box;
     width: 732px;
-    height: 636px;
     margin: 112px 0 174px;
     padding: 56px 94px 70px;
+}
+
+.popap .popap-form .close-button {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.popap .popap-form .close-button img {
+    width: 30px;
+    height: 30px;
+
 }
 
 .popap .popap-form p {
@@ -502,6 +574,8 @@ header .feedback-and-nav nav ul .header-nav-link:active {
 .popap .popap-form label {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    width: 0;
 }
 
 .popap .popap-form .popap-info {
@@ -510,6 +584,10 @@ header .feedback-and-nav nav ul .header-nav-link:active {
     gap: 34px;
 }
 
+.popap .popap-form .popap-info .fieldset-wrapper {
+    width: 0;
+    flex-grow: 1;
+}
 .popap .popap-form .popap-info fieldset legend {
     color: var(--color-white);
     font-family: 'Lato';
@@ -521,7 +599,24 @@ header .feedback-and-nav nav ul .header-nav-link:active {
 
 .popap .popap-form .popap-info fieldset .radio-input {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.popap .popap-form .popap-info fieldset .radio-input input {
+    margin: 0;
+}
+
+.popap .popap-form .popap-info fieldset .radio-input label {
+    margin: 0;
+    margin-right: 10px;
+    color: var(--color-white);
+    flex-grow: 0;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 138%;
+    width: fit-content;
 }
 
 .popap .popap-form label .input-label {
@@ -549,6 +644,7 @@ header .feedback-and-nav nav ul .header-nav-link:active {
     border: none;
     border-bottom: 1px solid var(--color-white);
     background-color: transparent;
+    resize: none;
     color: var(--light-grey);
     font-family: 'Lato';
     font-size: 20px;
@@ -556,8 +652,8 @@ header .feedback-and-nav nav ul .header-nav-link:active {
     line-height: 20px;
 }
 
-.popap .popap-form button {
-    align-items: center;
+.popap .popap-form .accent-btn {
+    align-self: center;
     margin-top: 34px;
     padding: 18px;
     font-size: 18px;

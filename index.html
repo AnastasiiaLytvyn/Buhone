@@ -129,8 +129,6 @@
                         <li><a href="#"><img src="./img/operating.system.png" alt="operating.system"></a></li>
                         <li><a href="#"><img src="./img/operating.system.png" alt="operating.system"></a></li>
                         <li><a href="#"><img src="./img/operating.system.png" alt="operating.system"></a></li>
-                    </ul>
-                    <ul>
                         <li><a href="#"><img src="./img/operating.system.png" alt="operating.system"></a></li>
                         <li><a href="#"><img src="./img/operating.system.png" alt="operating.system"></a></li>
                         <li><a href="#"><img src="./img/operating.system.png" alt="operating.system"></a></li>
@@ -159,46 +157,18 @@
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <p class="quotes">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
-                        <div class="info-text-user">
-                            <img src="./img/woman.png" alt="woman">
-                            <div class="info-text">
-                                <p class="name">Екатерина Иванова</p>
-                                <p>Директор ООО “Раз-два”</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="quotes">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
-                        <div class="info-text-user">
-                            <img src="./img/woman.png" alt="woman">
-                            <div class="info-text">
-                                <p class="name">Екатерина Иванова</p>
-                                <p>Директор ООО “Раз-два”</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="quotes">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
-                        <div class="info-text-user">
-                            <img src="./img/woman.png" alt="woman">
-                            <div class="info-text">
-                                <p class="name">Екатерина Иванова</p>
-                                <p>Директор ООО “Раз-два”</p>
-                            </div>
-                        </div>
-                    </li>
                 </ul>
                 <div class="slide-arrow">
                     <ul class="slide-button">
-                        <li><button class="accent-btn" type="button"></button></li>
-                        <li><button class="accent-btn" type="button"></button></li>
-                        <li><button class="accent-btn" type="button"></button></li>
-                        <li><button class="accent-btn" type="button"></button></li>
+                        <li><button type="button"></button></li>
+                        <li><button type="button"></button></li>
+                        <li><button type="button"></button></li>
+                        <li><button type="button"></button></li>
                     </ul>
-                    <button class="accent-btn" type="button" disabled><img src="./img/arrow.left.svg" alt="arrow.left"></button>
-                    <button class="accent-btn" type="button"><img src="./img/arrow.right.svg" alt="arrow.right"></button>
+                    <div class="arrow-group"> 
+                        <button class="accent-btn" type="button" disabled><img src="./img/arrow.left.svg" alt="arrow.left"></button>
+                        <button class="accent-btn" type="button"><img src="./img/arrow.right.svg" alt="arrow.right"></button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -260,6 +230,9 @@
         </div>
         <div class="popap cotent-center">
             <div class="popap-form cotent-center-wrapper">
+                <button class="close-button">
+                    <img src="./img/Vector.2.svg" alt="Vector">
+                </button>
                 <p>Оставить отзыв</p>
                 <div class="popap-name">
                     <label>
@@ -276,15 +249,17 @@
                         <span class="input-label">Email</span>
                         <input type="email" placeholder="Email">
                     </label>
-                    <fieldset>
-                        <legend>Все понравилось</legend>
-                        <div class="radio-input">
-                            <input type="radio" id="like-yes" name="like" value="yes">
-                            <label for="like-yes">да</label>
-                            <input type="radio" id="like-no" name="like" value="like-no">
-                            <label for="like-no">нет</label>
-                        </div>
-                    </fieldset>
+                    <div class="fieldset-wrapper">
+                        <fieldset>
+                            <legend>Все понравилось</legend>
+                            <div class="radio-input">
+                                <input type="radio" id="like-yes" name="like" value="yes">
+                                <label for="like-yes">да</label>
+                                <input type="radio" id="like-no" name="like" value="like-no">
+                                <label for="like-no">нет</label>
+                            </div>
+                        </fieldset>
+                    </div>
                 </div>
                 <label>
                     <span class="input-label">Отзыв</span>
@@ -293,7 +268,7 @@
                 <button class="accent-btn" type="submit">Отправить отзыв</button>
             </div>
         </div>
-
     </footer>
+
 </body>
 </html>
